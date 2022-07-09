@@ -1,7 +1,9 @@
 import {useState} from "react";
+import sablier from './assets/hourglass.png'
 
 function App() {
     const [name, setName] = useState('Andrew')
+    const [rotation, setRotation] = useState(0)
     const names = ['Ludovic', 'Noureddine', 'Andrew']
 
     const pick_up_name = () => {
@@ -16,7 +18,8 @@ function App() {
     return (
         <div>
             <h1>{name}</h1>
-            <h2>Work in progress...</h2>
+            <span>Work in progress </span>
+            <img className="App-logo" src={sablier} alt='coucou'/>
         </div>
     );
 }
